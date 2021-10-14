@@ -1,0 +1,395 @@
+{% extends 'order/base.html' %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'order/css/style.css' %}">
+ <!-- META DATA -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		
+        <!-- TITLE OF SITE -->
+        <title>Jubba</title>
+		<link rel="shortcut icon" type="image/icon" href="assets/images/logo/favicon.png"/>
+    
+        <link rel="stylesheet" href="{% static 'order/css/font-awesome.min.css' %}">
+
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+        <link rel="stylesheet" href="{% static 'order/css/animate.css' %}">
+
+        <link rel="stylesheet" href="{% static 'order/css/hover-min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'order/css/magnific-popup.css' %}">
+
+        <link rel="stylesheet" href="{% static 'order/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'order/css/owl.theme.default.min.css' %}">
+
+        <link rel="stylesheet" href="{% static 'order/css/bootstrap.min.css' %}">
+
+		<link href="{% static 'order/css/bootsnav.css' %}" rel="stylesheet"/>	
+       
+        <link rel="stylesheet" href="{% static 'order/css/style.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'order/css/responsive.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+		
+	
+		<!--header start-->
+		<section id="home"  class="header">
+			<div class="container">	
+				<div class="header-left">
+					<ul class="pull-left">
+						<li>
+							<a href="#">
+								<i class="fa fa-phone" aria-hidden="true"></i> +252
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header-right pull-right">
+					<ul>
+						<li class="reg">
+							<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+                                <a href="#">
+										<span class="fa fa-lock"></span>
+									</a>
+								 <a  href="">Log Out</a>
+							</a>
+
+						</li>
+						<li>
+							<div class="social-icon">
+								<ul>
+									
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="menu">
+			<div class="container">
+				<div class="menubar">
+					<nav class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a >
+							</a>
+						</div>
+
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="smooth-menu">
+									<a href="">Home</a>
+								</li>
+								<li class="smooth-menu"><a href="{% url 'costomerlist'%}">Costomers</a></li>
+								<li class="smooth-menu"><a href="">Service</a></li>
+								<li class="smooth-menu"><a href="{% url 'ordercreate'%}">Order</a></li>
+								<li class="smooth-menu"><a href="">Report</a></li>
+                                <li class="smooth-menu"><a href="">Manage Users</a></li>
+								<li>
+									<a href="#">
+										<span class="fa fa-bell"></span>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="header-slider-area">
+			<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+			
+			  <!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="single-slide-item slide-1">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="single-slide-item-content">
+											<h2>Welcom To <br>Jubba</h2>
+											<p>
+												High perfomance Printing Services
+											</p>
+											<button type="button" class="slide-btn"><a href="">Work</a>
+											
+											</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="single-slide-item slide-2">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="single-slide-item-content">
+											<h2>
+												Consult Your <br> Business
+											</h2>
+											<p>
+												We are the unique Consultancy Farm for your business solution, That is ready to take challenge and knockout your business problems.  
+											</p>
+											<button type="button"  class="slide-btn">
+												get started
+											</button>
+											<button type="button"  class="slide-btn
+											">
+												explore more
+											</button>
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="lnr lnr-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="lnr lnr-chevron-right"></span>
+				</a>
+			</div>
+
+		</section>
+
+
+		<script src="{% static 'order/js/jquery.js' %}"></script>
+		<script src="{% static 'order/js/jquery.hc-sticky.min.js' %}"></script>
+
+		
+
+
+        
+        <script>
+            $(document).ready(function(){
+	"use strict";
+    
+        /*==================================
+* Author        : "ThemeSINE"
+* Template Name : Zombiz HTML Template
+* Version       : 1.0
+==================================== */
+
+
+
+
+        /*=========== TABLE OF CONTENTS ===========
+1. Scroll To Top 
+2. hcsticky 
+3. Counter
+4. owl carousel
+5. vedio player
+======================================*/
+
+    // 1. Scroll To Top 
+		$(window).on('scroll',function () {
+			if ($(this).scrollTop() > 600) {
+				$('.return-to-top').fadeIn();
+			} else {
+				$('.return-to-top').fadeOut();
+			}
+		});
+		$('.return-to-top').on('click',function(){
+				$('html, body').animate({
+				scrollTop: 0
+			}, 1500);
+			return false;
+		});
+	
+	
+	// 2 . hcsticky 
+
+		$('#menu').hcSticky();
+
+
+	// 3. counter
+		$(window).on('load', function(){	
+			$('.counter').counterUp({
+				delay: 10,
+				time: 3000
+			});	
+		});
+	
+	
+	// 4. owl carousel
+
+		// i. .team-carousel 
+	
+		
+		var owl=$('.team-carousel');
+		owl.owlCarousel({
+			items:4,
+			margin:0,
+			
+			loop:true,
+			autoplay:true,
+			smartSpeed:500,
+			
+			//nav:false,
+			//navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+			
+			dots:false,
+			autoplayHoverPause:true,
+		
+			responsiveClass:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					640:{
+						items:2
+					},
+					768:{
+						items:3
+					},
+					992:{
+						items:4
+					}
+				}
+			
+			
+		});
+
+		// ii. .client (carousel)
+		
+		$('#client').owlCarousel({
+			items:5,
+			loop:true,
+			smartSpeed: 1000,
+			autoplay:true,
+			dots:false,
+			autoplayHoverPause:true,
+			responsive:{
+					0:{
+						items:2
+					},
+					415:{
+						items:2
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:5
+					}
+				}
+			});
+			
+			
+			$('.play').on('click',function(){
+				owl.trigger('play.owl.autoplay',[1000])
+			})
+			$('.stop').on('click',function(){
+				owl.trigger('stop.owl.autoplay')
+			})
+
+		// iii.  testimonial
+		
+		$("#testemonial-carousel").owlCarousel({
+			items: 1,
+			autoplay: true,
+			loop: true,
+			dots:true,
+			mouseDrag:true,
+			nav:false,
+			smartSpeed:1000,
+			transitionStyle:"fade",
+			animateIn: 'fadeIn',
+			animateOut: 'fadeOutLeft'
+			// navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+		});
+
+	// 5. vedio player
+		$('.vedio-play-icon').magnificPopup({
+			
+			type:'video'
+		
+		});
+
+	// 6. animation support
+
+        $(window).load(function(){
+
+            $(".single-slide-item-content h2, .single-slide-item-content p").removeClass("animated fadeInUp").css({'opacity':'0'});
+            $(".single-slide-item-content button").removeClass("animated fadeInLeft").css({'opacity':'0'});
+        });
+
+        $(window).load(function(){
+
+            $(".single-slide-item-content h2, .single-slide-item-content p").addClass("animated fadeInUp").css({'opacity':'0'});
+            $(".single-slide-item-content button").addClass("animated fadeInLeft").css({'opacity':'0'});
+
+        });
+
+    
+    // 6. Smooth Scroll spy
+        
+        // $('.header-area').sticky({
+        //    topSpacing:0
+        // });
+        
+        //=============
+
+        $('li.smooth-menu a').bind("click", function(event) {
+            event.preventDefault();
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top - -1
+            }, 1200,'easeInOutExpo');
+        });
+        
+        $('body').scrollspy({
+            target:'.navbar-collapse',
+            offset:0
+        });
+		
+});	
+	
+        </script>
+{% endblock %}

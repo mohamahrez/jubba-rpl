@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'order/order.css' %}">
+{% endblock %}
+
+{% block content %}
+<h2>Orders</h2>
+<a href="{% url 'ordercreate'%}"><button class="btn">Add Order</button></a>
+<a href="{% url 'home'%}">Home</button></a>
+<table id="orders">
+  <tr>
+    <th>Name</th>
+      <th>Order</th>
+      <th> </th>
+  </tr>
+  {% for order in object_list %}
+  <tr>
+      <td>{{ order.first_name}}</td>
+      <td>{{ order.text }} </td>
+      <td>{{ order.created_at }} </td>
+      <td><a href="{% url 'orderdelete' order.id %}"><button>Delete</button></a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
+

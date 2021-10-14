@@ -1,0 +1,15 @@
+{% extends "order/base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'order/order_create.css' %}">
+{% endblock %}
+{% block content %}
+<a href="{% url 'home'%}">Home</button></a>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" />
+</form>
+{% endblock %}
+
