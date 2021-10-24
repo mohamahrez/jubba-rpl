@@ -73,7 +73,7 @@
                                 <a href="#">
 										<span class="fa fa-lock"></span>
 									</a>
-								 <a  href="">Log Out</a>
+								 <a  href="{% url 'logout'%}">Log Out</a>
 							</a>
 
 						</li>
@@ -112,9 +112,8 @@
 									<a href="">Home</a>
 								</li>
 								<li class="smooth-menu"><a href="{% url 'costomerlist'%}">Costomers</a></li>
-								<li class="smooth-menu"><a href="">Service</a></li>
 								<li class="smooth-menu"><a href="{% url 'ordercreate'%}">Order</a></li>
-								<li class="smooth-menu"><a href="">Report</a></li>
+								<li class="smooth-menu"><a href="{% url 'Report'%}">Report</a></li>
                                 <li class="smooth-menu"><a href="">Manage Users</a></li>
 								<li>
 									<a href="#">

@@ -3,12 +3,20 @@
 {% block content %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'order/login.css' %}">
-    <h2>Please login</h2>
+
+
 <form class="login" method="post">
-    <div>
-      {% csrf_token %}
-      {{ form.as_p }}
-      <input type="submit" value="Login"/>
+	<div class="login">
+ 	 <div class="login-triangle"></div>
+   
+  	<div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
     </div>
-</form>
+
+  	<form class="login-container">
+  	 {% csrf_token %}
+   	 {{ form.as_p }}
+    	<p><input type="submit" value="Log in"></p>
+  </form>
+
 {% endblock %}

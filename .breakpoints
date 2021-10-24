@@ -1,0 +1,20 @@
+{
+  "files": {
+    ".replit": [
+      {
+        "id": "4964ea66-ffb1-49be-9a37-f7d089a14353",
+        "line": 3,
+        "version": 1,
+        "index": 69
+      }
+    ],
+    "jubba/static/order/registration/css/style.css": [
+      {
+        "id": "8718738e-9d65-45a2-a7a2-ef4240f073e6",
+        "line": 24,
+        "version": 5,
+        "index": 450
+      }
+    ]
+  }
+}

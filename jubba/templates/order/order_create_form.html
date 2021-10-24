@@ -152,13 +152,13 @@ button:hover {
 <div class="d-flex">
   <form action="" method="POST">
     <label>
-      <span class="fname">First Name <span class="required"></span></span>
+      <span class="fname">File Name <span class="required"></span></span>
        {% csrf_token %}
-       {{ form.penrson_name }}
+       {{ form.File_name }}
     </label>
     <label>
          {% csrf_token %}
-      <span>Company Name (Optional)</span>
+      <span>Company Name</span>
        {{ form.compny_name }}
     </label>
     
@@ -182,21 +182,19 @@ button:hover {
         {% csrf_token %}
       <span>Description <span class="required">*</span></span>
        {{ form.text }}
+       <button type="button">Submit</button>
     </label>
      <div class="Yorder">
     <br>
     <div>
          {% csrf_token %}
         {{ form.Payment_choice }}
+    
     </div>
       <div>
-    <label>
-      <span>Rest <span class="required">*</span></span>
-       {% csrf_token %}
-       {{ form.Rest }}
-    </label>
+          
       </div>
-    <button type="button">Submit</button>
+   
   </div><!-- Yorder -->
  </div>
 </div>

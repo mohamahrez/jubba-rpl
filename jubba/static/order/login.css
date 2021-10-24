@@ -1,31 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 body {
-	font-family: Arial;
+  background: rgb(202, 227, 252);
+  font-family: 'Open Sans', sans-serif;
 }
 
-.login-form {
-	display: flex;
-	width: 420px;
-	flex-direction: column;
-	margin: auto;
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+.form-icon{
+	text-align: center;
+    background-color: #0571fd;
+    border-radius: 100%;
+    font-size: 60px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 60px;
+    line-height: 0;
 }
 
-input[type=submit]{
-	background-color: #3A10E5;
-	color: white;
-	padding: 10px 14px;
-	margin: 8px 0;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 50px;
+
+
 }
 
-input[type=text],
-input[type=password]{
-	margin: 10px 0;
-	padding: 5px;
-	width: 100%;
-	border-radius: 4px;
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(253, 253, 253);
 }
 
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: rgb(22, 182, 223);
+  color: rgb(70, 67, 219);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: rgb(250, 246, 246);
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: rgb(242, 244, 247);
+}
+
+.login input[type="submit"]:focus {
+  border-color: rgb(245, 246, 247);
+}

@@ -9,15 +9,17 @@ class CostINfo(models.Model):
         (Unpaid, 'UNPAID'),
   ]
   created_at = models.DateTimeField(auto_now_add=True)
-  penrson_name = models.CharField(max_length=30)
+  File_name = models.CharField(max_length=30)
   compny_name = models.CharField(max_length=30)
   town_city = models.CharField(max_length=30)
   phone = models.CharField(max_length=30)
   text = models.TextField(max_length=300) 
-  pdf = models.FileField(null=True, blank=True)
-  #Rest = models.IntegerField(max_length=30)
-'''  Payment_choice = models.CharField(
+ #pdf = models.FileField(null=True, blank=True)
+ # Rest = models.IntegerField(max_length=30)
+  '''Payment_choice = models.CharField(
         max_length=10,
         choices=PAYMENT_CHOICE,
     )
-  '''
+''' 
+  def get_absolute_url(self):
+      return list
