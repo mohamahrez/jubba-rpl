@@ -35,12 +35,12 @@ class OrderCreate(LoginRequiredMixin,CreateView):
    model = CostINfo
    template_name = 'order/order_create_form.html'
    form_class = CostINfoCreateForm
-'''
+
 class OrderDelete(LoginRequiredMixin, DeleteView):
-    model = Orders
+    model = CostINfo
     template_name = "order/order_delete_form.html"
     success_url = "/order/list"
-
+'''
 class CostomerCreate(CreateView):
    model = Costomer
    template_name = 'order/Costomer_create_form.html'
@@ -59,6 +59,16 @@ class CostomerDelete(LoginRequiredMixin, DeleteView):
     template_name = "order/costomer_delete_form.html"
     success_url = "/costomer/list"
 '''
+class WorkUpdateView(UpdateView):
+    model = CostINfo
+    fields = ["File_name","compny_name","text"]
+    template_name = 'order/costinfo_update_form.html'
+    success_url = "/order/list"
+
+class OrderList(LoginRequiredMixin,ListView):
+     template_name = 'order/orders_list.html'
+     queryset = CostINfo.objects.all()
+     
 def logout_request(request):
   logout(request)
   return redirect("home")

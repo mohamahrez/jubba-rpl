@@ -22,4 +22,4 @@ class CostINfo(models.Model):
     )
 ''' 
   def get_absolute_url(self):
-      return 'create'
+      return 'list'
