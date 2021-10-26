@@ -1,23 +1,15 @@
-{% extends 'order/base.html' %}
+{% extends "order/base.html" %}
 {% load static %}
 
 {% block head %}
-  <link rel="stylesheet" href="{% static 'order/order.css' %}">
+  <link rel="stylesheet" href="{% static 'order/order_create.css' %}">
 {% endblock %}
-
 {% block content %}
-	<ul>
-    {% for i in all_Order %} 
-    <li>{{i.Description}}
-    </li>
-    {% endfor %}
-</ul> 
-	<form method="post">
-	  <div id="myDIV" class="header">
-		<h2>ORDER</h2>
-		 <input type="text" id="myInput" placeholder="Title...">
-		<span onclick="newElement()" class="addBtn">Add</span>
-		</div>
-	</form>
-
+<a href="{% url 'home'%}">Home</button></a>
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" />
+</form>
 {% endblock %}
+
