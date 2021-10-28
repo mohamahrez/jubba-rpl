@@ -16,7 +16,6 @@ from django.contrib.auth import logout
 
 
 
-
 # Create your views here.
 '''class SignUp(LoginRequiredMixin,CreateView):
       form_class = UserCreationForm

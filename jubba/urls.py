@@ -11,4 +11,12 @@ urlpatterns = [
     path("order/list", views.OrderList.as_view(), name="orderlist"),
     path('order/delete/<pk>', views.OrderDelete.as_view(), name="orderdelete"),
     path('order/update/<pk>', views.WorkUpdateView.as_view(), name="orderupdate"),
+        path(
+        'change-password/',
+        auth_views.PasswordChangeView.as_view(
+            template_name='registration/change-password.html',
+            success_url = '/'
+        ),
+        name='change_password'
+    ),
     ]
